@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/allCrimes">
+
+    <fragment
+        android:id="@+id/allCrimes"
+        android:name="com.pum.studentcrime.AllCrimes"
+        android:label="AllCrimes" >
+        <action
+            android:id="@+id/action_allCrimes_to_detailCrimeFragment"
+            app:destination="@id/detailCrimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCrimeFragment"
+        android:name="com.pum.studentcrime.DetailCrimeFragment"
+        android:label="DetailCrimeFragment" >
+        <argument
+            android:name="crimeInfo"
+            app:argType="string" />
+    </fragment>
+</navigation>
