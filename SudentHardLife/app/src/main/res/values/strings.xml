@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SudentHardLife</string>
+    <string name="rationale_camera">aplikacja wymaga upoważnienia aby uzyskać dostęp do aparatu</string>
 </resources>

@@ -27,6 +27,6 @@ class DetailCrimeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<TextView>(R.id.detailCrimeTextView).text = crimeInfo // 
+        view.findViewById<TextView>(R.id.detailCrimeTextView).text = crimeInfo //
     }
 }
