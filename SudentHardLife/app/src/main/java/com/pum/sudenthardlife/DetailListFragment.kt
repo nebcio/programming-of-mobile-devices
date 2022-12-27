@@ -78,6 +78,9 @@ class DetailListFragment : Fragment() {
 
         binding.buttonEdit.setOnClickListener {
             if (binding.titleTextView.isVisible) {
+                binding.titleEditText.setText(listList[currentId].title)    // hidden
+                binding.descriptionEditText.setText(listList[currentId].description)
+
                 binding.titleTextView.visibility = View.INVISIBLE
                 binding.descriptionTextView.visibility = View.INVISIBLE
 
@@ -88,14 +91,13 @@ class DetailListFragment : Fragment() {
             }
             else {
                 listList[currentId].title = binding.titleEditText.text.toString()
-                listList[currentId].description = binding.titleEditText.text.toString()
+                listList[currentId].description = binding.descriptionEditText.text.toString()
 
                 binding.titleTextView.text = listList[currentId].title
                 binding.descriptionTextView.text = listList[currentId].description
 
                 binding.titleTextView.visibility = View.VISIBLE
                 binding.descriptionTextView.visibility = View.VISIBLE
-
                 binding.titleEditText.visibility = View.INVISIBLE
                 binding.descriptionEditText.visibility = View.INVISIBLE
 
